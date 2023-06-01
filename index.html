@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Single Price Grid Component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+		<!-- DEPENDENCIES -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@unocss/runtime/attributify.global.js"></script>
+	</head>
+	<body class="font-karla bg-neutral-gray" un-cloak>
+		<section class="flex justify-center items-center mx-8 my-18">
+			<div
+				class="overflow-hidden max-w-158.75 rounded-1.75 shadow-xl"
+				md="grid grid-cols-2"
+			>
+				<div
+					class="px-6 pt-6.5 pb-8 bg-white"
+					md="col-span-2 px-10 pt-9 pb-10.25"
+				>
+					<h2
+						class="text-4.75 font-700 tracking-0.07 text-primary-cyan"
+						md="text-5.75"
+					>
+						Join our community
+					</h2>
+					<p
+						class="mt-4.75 font-700 -tracking-0.17 leading-5 text-primary-yellow"
+						md="mt-5.5 text-4.75"
+					>
+						30-day, hassle-free money back guarantee
+					</p>
+					<p
+						class="mt-4.75 text-3.75 -tracking-0.14 leading-6.4 text-neutral-blue"
+						md="mt-2.5 text-4 -tracking-0.04 leading-6.5"
+					>
+						Gain access to our full library of tutorials along with
+						expert code reviews. Perfect for any developers who are
+						serious about honing their skills.
+					</p>
+				</div>
+				<div
+					class="px-6 pt-5.25 pb-6 bg-primary-cyan"
+					md="px-10 pt-9.5 pb-9.5"
+				>
+					<h2 class="text-sub-title text-white">
+						Monthly Subscription
+					</h2>
+					<div
+						class="mt-2.5 flex items-center gap-2.5 text-neutral-gray"
+					>
+						<span class="text-8 font-700 text-white"
+							>&dollar;29</span
+						>
+						per month
+					</div>
+					<p class="-mt-0.5 -tracking-0.04 text-white">
+						Full access for less than &dollar;1 a day
+					</p>
+					<button
+						class="mt-7 py-3 w-full rounded-1 font-700 bg-primary-yellow text-white shadow-xl"
+					>
+						Sign Up
+					</button>
+				</div>
+				<div
+					class="px-6 pt-5.25 pb-6 bg-primary-cyan"
+					md="px-10 pt-9.5 pb-9.5"
+				>
+					<h2 class="text-sub-title text-white">Why Us</h2>
+					<ul
+						class="mt-3.75 text-3.5 -tracking-0.03 leading-5 text-neutral-gray"
+					>
+						<li>Tutorials by industry experts</li>
+						<li>Peer &amp; expert code review</li>
+						<li>Coding exercises</li>
+						<li>Access to our GitHub repos</li>
+						<li>Community forum</li>
+						<li>Flashcard decks</li>
+						<li>New videos every week</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
